@@ -1,0 +1,44 @@
+!doctype html
+html lang=en
+  head
+    meta charset=UTF-8 
+    meta name=viewport content=width=device-width, initial-scale=1.0 
+    titleWill You Be My Valentinetitle
+    link rel=stylesheet href=styles.css 
+  head
+  body
+    main class=card aria-label=Valentine card
+      div class=bear-wrap
+        img class=bear src=assetsbear.png alt=Cute bear holding flowers 
+      div
+
+      h1Will you be my Valentineh1
+
+      div class=buttons role=group aria-label=Valentine response buttons
+        button id=yesBtn class=btn btn-yes type=buttonYesbutton
+
+        !-- No button is positioned so it can run away --
+        div class=no-zone id=noZone
+          button id=noBtn class=btn btn-no type=buttonNobutton
+        div
+      div
+
+      p class=hint id=hint aria-live=politep
+      p class=madeMade with span aria-hidden=true❤spanp
+    main
+
+    !-- Floating hearts layer --
+    div class=hearts aria-hidden=truediv
+
+    !-- Cute modal --
+    dialog id=dialog class=dialog
+      div class=dialog-inner
+        h2Yayyyy! 💖h2
+        pYou just made my day.p
+        button id=closeDialog class=btn btn-yes type=buttonAww 🥰button
+      div
+    dialog
+
+    script src=script.jsscript
+  body
+html
